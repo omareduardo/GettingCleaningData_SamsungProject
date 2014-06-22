@@ -73,4 +73,4 @@ mean_std_measurement_data$"Activity ID"[LAYING] <- "LAYING"
 # for each activity and each subject. 
 
 library(reshape2)
-
+tidyDataMelt <- melt(mean_std_measurement_data,id=c("Activity ID","Subject ID"))
